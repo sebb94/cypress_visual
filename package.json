@@ -1,0 +1,25 @@
+{
+  "name": "cypress_visual",
+  "version": "1.0.0",
+  "description": "visual regressing testing using cypress",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebb94/cypress_visual.git"
+  },
+  "author": "Sebastian Gagor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sebb94/cypress_visual/issues"
+  },
+  "homepage": "https://github.com/sebb94/cypress_visual#readme",
+  "dependencies": {
+    "cypress": "^5.1.0",
+    "cypress-image-snapshot": "^3.1.1",
+    "prettier": "^2.1.1"
+  }
+}
