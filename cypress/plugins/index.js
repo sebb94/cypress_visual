@@ -16,7 +16,7 @@
  * @type {Cypress.PluginConfig}
  */
 
- const { addMatchImageSnapShotPlugin } = require('cypress-image-snapshot/plugin')
+ const { addMatchImageSnapshotPlugin } = require('cypress-image-snapshot/plugin')
  module.exports = (on, config) => {
-  addMatchImageSnapShotPlugin(on,config)
+  addMatchImageSnapshotPlugin(on,config)
 }
