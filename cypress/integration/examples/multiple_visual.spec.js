@@ -5,10 +5,20 @@ describe('Visual Regression', () => {
     sizes.forEach(size => {
         pages.forEach(page => {
             it(`Should match ${page} in resolution ${size}`, () => {
+                let currentTime = new Date(Date.UTC(2020,1,1)).getDate()
+                cy.clock(currentTime);
                 cy.setResolution(size)
                 cy.visit(page)
                 cy.matchImageSnapshot()
             });
         });
+    });
+});
+
+
+describe('Single element snapshot', () => {
+    it('Should snapshot', () => {
+        cy.visit('cypress/pages/index.html')
+        cy.get('h1').matchImageSnapshot()
     });
 });
