@@ -19,6 +19,9 @@ describe('Visual Regression', () => {
 describe('Single element snapshot', () => {
     it('Should snapshot', () => {
         cy.visit('cypress/pages/index.html')
-        cy.get('h1').matchImageSnapshot()
+        cy.get('h1').matchImageSnapshot({
+            failureTreshhold:1.0,
+            failureTreshholdType: "pixels"
+        })
     });
 });
