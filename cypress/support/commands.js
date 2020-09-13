@@ -30,7 +30,7 @@ addMatchImageSnapshotCommand({
     failureTrashold: 0.00,
     failureTrasholdType: "percent",
     customDiffConfig: {treshold : 0.0},
-    capture: "viewport"
+    capture: "fullPage"
 })
 
 Cypress.Commands.add('setResolution', (size) => {
